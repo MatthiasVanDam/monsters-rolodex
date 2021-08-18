@@ -1,7 +1,10 @@
+//Base Imports
 import React, { Component } from "react";
 import "./App.css";
-//components
+
+//Component Imports
 import { CardList } from "./components/card-list/card-list.component";
+import { SearchBox } from "./components/search-box/search-box.component";
 
 class App extends Component {
   constructor() {
@@ -18,6 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <SearchBox />
         <CardList monsters={this.state.monsters}></CardList>
       </div>
     );
